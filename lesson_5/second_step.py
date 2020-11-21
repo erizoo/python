@@ -1,0 +1,8 @@
+my_file = open('second_step_file.txt', 'r')
+row_content = my_file.readlines()
+print(f'Количество строк в файле - {len(row_content)}')
+my_file = open('second_step_file.txt', 'r')
+content = my_file.read()
+content = content.split()
+print(f'Общее количество слов - {len(content)}')
+my_file.close()
